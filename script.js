@@ -1,6 +1,7 @@
- console.log("Lets start javascript")
+console.log("Lets start javascript")
 let songs;
 let currentsong = new Audio();
+let currfolder;
 
 function formatTime(seconds) {
     if (isNaN(seconds) || seconds < 0) return "00:00";
@@ -13,7 +14,7 @@ function formatTime(seconds) {
 
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`http://127.0.0.1:3000/${currfolder}/`)
+    let a = await fetch(`/${currfolder}/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -26,12 +27,15 @@ async function getsongs(folder) {
             continue;
         }
         const element = as[index];
+        
+        // Extract filename from href instead of innerText to avoid timestamp
+        let filename = element.href.split("/").slice(-1)[0];
 
-        if (element.innerText == "cover.jpg" || element.innerText == "info.json") {
+        if (filename == "cover.jpg" || filename == "info.json") {
             continue;
         }
 
-        songs.push(element.innerText);
+        songs.push(decodeURIComponent(filename));
     }
     let songsul = document.querySelector(".songlist").getElementsByTagName("ul")[0]
     songsul.innerHTML = ""
@@ -39,7 +43,7 @@ async function getsongs(folder) {
         songsul.innerHTML = songsul.innerHTML +
             `<li><img class="invert" src="music.svg" alt="">
             <div class="info">
-                <div> ${song.replaceAll("%20", "")}</div>
+                <div> ${song.replaceAll("%20", " ")}</div>
                 <div>songartist</div>
             </div>
             <div class="playnow">
@@ -60,11 +64,10 @@ async function getsongs(folder) {
 
 }
 const playmusic = (track, pause = false) => {
-    currentsong.src = `${currfolder}` + track
+    currentsong.src = `/${currfolder}/` + track
     if (!pause) {
         currentsong.play()
     }
-    currentsong.play();
     updatePlayIcon();
     document.querySelector(".songinfo").innerHTML = track
     document.querySelector(".songtime").innerHTML = "00:00"
@@ -72,7 +75,7 @@ const playmusic = (track, pause = false) => {
 
 }
 async function displayalbubs() {
-    let a = await fetch(`http://127.0.0.1:3000/songs/`)
+    let a = await fetch(`/songs/`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -80,10 +83,10 @@ async function displayalbubs() {
     let cardcontainer = document.querySelector(".cardcontainer")
     Array.from(anchors).forEach(async e => {
         try {
-            if (e.href.includes("%5Csongs%5C")) {
-                let folder = e.href.split("%5C").slice(-2)[1]
+            if (e.href.includes("/songs/")) {
+                let folder = e.href.split("/").slice(-2)[1]
 
-                let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`)
+                let a = await fetch(`/songs/${folder}/info.json`)
                 let response = await a.json();
                 console.log(`Response: ${response}`);
                 cardcontainer.innerHTML += `
@@ -112,7 +115,7 @@ async function displayalbubs() {
 async function main() {
 
     // get the list of all songs
-    await getsongs("songs/cs/")
+    await getsongs("songs/Gazals")
     // playmusic(songs[0],true)
 
     await displayalbubs()
@@ -194,4 +197,4 @@ function updateEventListener() {
 }
 
 updateEventListener()
-main()  
+main()
