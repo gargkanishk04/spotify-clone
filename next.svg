@@ -1,0 +1,10 @@
+<svg
+  width="30"
+  height="30"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Next icon (triangle + bar) -->
+  <polygon points="8,7 14,12 8,17" fill="black"/>
+  <rect x="15" y="7" width="2" height="10" fill="black"/>
+</svg>
