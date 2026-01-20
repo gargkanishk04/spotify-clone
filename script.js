@@ -23,7 +23,11 @@ async function getsongs(folder) {
     songs = []
 
     _songs.forEach((e) => {
-        songs.push({ "name": e.name, "url": decodeURIComponent(e.url) });
+        songs.push({
+    name: e.name,
+    url: encodeURI(e.url)
+});
+
 
         console.log(`Song: ${e.url}`);
     });
@@ -56,15 +60,26 @@ async function getsongs(folder) {
 }
 
 const playmusic = (track, song_name = "", pause = false) => {
-    console.log(`Current Folder = /${currfolder}/${track}`)
-    currentsong.src = track
+    const safeTrack = encodeURI(track);
+    currentsong.src = `/${safeTrack}`;
+
+    if (!pause) {
+        currentsong.play().catch(err => console.log(err));
+    }
+
+    updatePlayIcon();
+    document.querySelector(".songinfo").innerHTML = song_name;
+    document.querySelector(".songtime").innerHTML = "00:00";
+};
+
+
     if (!pause) {
         currentsong.play()
     }
     updatePlayIcon();
     document.querySelector(".songinfo").innerHTML = song_name
     document.querySelector(".songtime").innerHTML = "00:00"
-}
+
 
 async function displayalbubs() {
     let a = await fetch(`/songs/PlaylistInfo.json`)
@@ -141,10 +156,13 @@ play.addEventListener("click", () => {
 currentsong.onended = () => {
     console.log("THis song has eneded");
 
-    let index = getCurrentSongIndex();
-    if (index < songs.length - 1) {
-        playmusic(songs[index + 1].url, songs[index + 1].name);
-    }
+    function getCurrentSongIndex() {
+    let currentFile = decodeURIComponent(currentsong.src.split("/").pop());
+    return songs.findIndex(song =>
+        decodeURIComponent(song.url).includes(currentFile)
+    );
+}
+
 }
 
 currentsong.addEventListener("timeupdate", () => {
