@@ -197,7 +197,7 @@ function updateEventListener() {
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async item => {
             console.log(item.target, item.currentTarget.dataset)
-            await getsongs(`/songs/${item.currentTarget.dataset.folder}`)
+            await getsongs(`songs/${item.currentTarget.dataset.folder}`)
 
             //Show Drawer
             document.querySelector(".left").style.left = "0"
