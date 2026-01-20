@@ -75,7 +75,7 @@ const playmusic = (track, pause = false) => {
 
 }
 async function displayalbubs() {
-    let a = await fetch(`/songs/`)
+    let a = await fetch(`/songs/PlaylistsInfo.json`)
     let response = await a.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -90,7 +90,7 @@ async function displayalbubs() {
                 let response = await a.json();
                 console.log(`Response: ${response}`);
                 cardcontainer.innerHTML += `
-                <div data-folder="${folder}" class="card" style="padding: 10px 5px;">
+                <div data-folder="${folder}" class="card" style="padding: 0px 5px;">
                         <div  class="play"><svg width="48" height="48" viewBox="0 0 120 120"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <!-- Green circle -->

@@ -1,4 +1,4 @@
- * {
+* {
     margin: 1px;
     padding: 0;
 }
@@ -343,15 +343,8 @@ body {
     .hambeg{
         display: block ;
     }
-    .cardcontainer{
-        width: 100%;
-    }
-    html .cardcontainer{
-        width: 100%;
-    }
     .right{
-        display: flex;
-        width: 100vw;
+        width: 100%;
     }
     .playbar{
         width: 88vw;

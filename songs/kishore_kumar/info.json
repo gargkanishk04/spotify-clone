@@ -1,4 +1,66 @@
 {
     "title":"Kishore kumar",
-    "description":""
+    "description":"",
+     "songs": [
+        {
+            "url": "songs\\kishore_kumar\\Blackmail - Pal Pal Dil Ke Paas Tum Rehti Ho - Kishore Kumar(MP3_160K).mp3",
+            "name": "Pal pal dil ke paas Tum rehti ho-"
+        },
+        {
+            "url": "songs\\kishore_kumar\\O Saathi Re _ Amitabh Bachchan _ Muqaddar ka Sikandar _ Lyrical Video _ Old Hindi Song(MP3_160K).mp3",
+            "name": "O sathi re"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Pyar Deewana Hota Hai 4K Song _ Kishore Kumar Classics _ Rajesh Khanna _ Hindi Romantic-Kati Patang(MP3_160K).mp3",
+            "name": "Pyar deewana hota hai"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Chhu Kar Mere Manko (Lyrical Video) _ Kishore Kumar _ Rajesh Roshan _ Revibe _ Hindi Songs(MP3_160K).mp3",
+            "name": "Chhu kar mere man ko"
+        },
+        {
+            "url": "songs\\kishore_kumar\\O Mere Dil Ke Chain _ Full Lyrics Video _ Kishore Kumar _ Rajesh Khanna _ Eternal Romantic Classic(MP3_160K).mp3",
+            "name": "O mere dil ke chain"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Chala Jata Hoon (HD) _ Mere Jeevan Saathi (1972) _ Rajesh Khanna_ Tanuja _ Kishore Kumar _ RD Burman(MP3_160K).mp3",
+            "name": "Chala jata hu"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Neele Neele Ambar Par - Male Version Lyric Video - Kalaakaar _ Sridevi _ Kishore Kumar(MP3_160K).mp3",
+            "name": "Neele neele ambar par"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Kishore Kumar _ Mere Sapno Ki Rani Kab Aayegi Tu _ Rajesh Khanna _ Sharmila Tagore(MP3_160K).mp3",
+            "name": "Mere Sapno ki rani"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Khwaab Ho Tum Ya Koi _ Teen Deviyan _ Dev Anand _ Romantic Old Hindi Songs _ Kishore Kumar(MP3_160K).mp3",
+            "name": "Khwaab ho tum ya koi "
+        },
+        {
+            "url": "songs\\kishore_kumar\\Ek Ladki Bheegi Bhaagi Si _ Kishore Kumar _ Madhubala _ Chalti Ka Naam Gaadi (1958) _ Old Hit Song(MP3_160K).mp3",
+            "name": "Ek ladki bheegi bhagi si"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Saagar Jaisi Aankhon Wali (Lyrical Video) _ Kishore Kumar _ R. D. Burman _ Revibe _ Hindi Songs(MP3_160K) - Copy.mp3",
+            "name": "Saagar Jaisi Aankhon Wali"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Yeh Ratein Yeh Mausam _ Dilli Ka Thug (1958) _ Nutan _ Asha Bhosle _ Kishore Kumar Hit Songs(MP3_160K)_1.mp3",
+            "name": "Yeh Ratein Yeh Mausam"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Yeh Shaam Mastani 4K _ Kishore Kumar _ Rajesh Khanna _ Kati Patang _ Classic Bollywood 4K Video Song(MP3_160K).mp3",
+            "name": "Yeh Shaam Mastani"
+        },
+        {
+            "url": "songs\\kishore_kumar\\a mere mehboob qayamat hogi.mp3.mpeg",
+            "name": "A Mere Mehboob Qayamat Hogi"
+        },
+        {
+            "url": "songs\\kishore_kumar\\Aise Na Mujhe  (Official Lyric Video) _ Kishore Kumar _ Dev Anand_ Zeenat Aman _ Darling Darling(MP3_160K).mp3",
+            "name": "Aise Na Mujhe"
+        }
+    ]
 }

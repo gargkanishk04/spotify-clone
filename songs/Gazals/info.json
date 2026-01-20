@@ -1,4 +1,51 @@
 {
-    "title":"Gazals",
-    "description":""
+    "title": "Gazals",
+    "description": "",
+   "songs": [
+  {
+    "url": "songs\\Gazals\\Ek Pyar Ka Nagma Hai _ Jagjit Singh _ Live Concert Video _ Close To My Heart _ Laxmikant Pyarelal(MP3_160K).mp3",
+    "name": "Ek Pyar Ka Nagma Hai"
+  },
+  {
+    "url": "songs\\Gazals\\Hoshwalon Ko Khabar Kya _ Aamir Khan _ Sonali Bendre _ Sarfarosh Movie _ Jagjit Singh _ 90_s Hits(MP3_160K).mp3",
+    "name": "Hoshwalon Ko Khabar Kya"
+  },
+  {
+    "url": "songs\\Gazals\\Jagjit Singh _ Aapko Dekh Kar Dekhta Rah Gaya _ Lyrical _ Mukhda _ Old Hindi Ghazal(MP3_160K).mp3",
+    "name": "Aapko Dekh Kar Dekhta Rah Gaya"
+  },
+  {
+    "url": "songs\\Gazals\\Main Nashe Mein Hun _ Lyrical Video _ Jagjit Singh _ Best of Jagjit Singh Ghazals(MP3_160K).mp3",
+    "name": "Main Nashe Mein Hoon"
+  },
+  {
+    "url": "songs\\Gazals\\No.1 Ghazal by Ghulam Ali _ Humko Kis Ke Gham Ne Mara _ Beautiful Song _ Hi-Tech Pakistani(MP3_160K).mp3",
+    "name": "Humko Kis Ke Gham Ne Mara"
+  },
+  {
+    "url": "songs\\Gazals\\Superhit Gazal _ Khamosh Lab Hai Jhuki Hai Palkein _ Abhi Mohbbat Nai Nai Hai _  Mehdi Hasan sahab(MP3_160K).mp3",
+    "name": "Khamosh Lab Hai Jhuki Hai Palkein"
+  },
+  {
+    "url": "songs\\Gazals\\Tere Aane Ki Jab Khabar Mehke Full (Audio) Song Jagjit Singh Uper Hit Ghazal Album _Saher_(MP3_160K).mp3",
+    "name": "Tere Aane Ki Jab Khabar Mehke"
+  },
+  {
+    "url": "songs\\Gazals\\Tum Itna Jo Muskura Rahe Ho _ Jagjit Singh Ghazals _ Jagjit Singh Sad Ghazals _ Arth _ Kaifi Azmi(MP3_160K).mp3",
+    "name": "Tum Itna Jo Muskura Rahe Ho"
+  },
+  {
+    "url": "songs\\Gazals\\Tum Ko Dekha To Yeh Khayal Aaya _ Jagjit singh Ghazals _ Chitra Singh _ Lyrical Video _ Love Songs(MP3_160K).mp3",
+    "name": "Tum Ko Dekha To Yeh Khayal Aaya"
+  },
+  {
+    "url": "songs\\Gazals\\Aap ko dekh kar dekhta rah gaya (Jagjit Singh)(MP3_160K).mp3",
+    "name": "Aap Ko Dekh Kar Dekhta Rah Gaya"
+  },
+  {
+    "url": "songs\\Gazals\\Baat Niklegi To Phir Door Talak with lyrics _ बात निकलेगी तो _ Jagjit Singh _ Duniya Jise Kahte Hain(MP3_160K).mp3",
+    "name": "Baat Niklegi To Phir Door Talak"
+  }
+]
+
 }

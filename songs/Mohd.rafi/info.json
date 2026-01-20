@@ -1,4 +1,35 @@
 {
     "title":"Mohd.Rafi",
-    "description":""
+    "description":"",
+  "songs" :[
+  {
+    "url": "songs\\Mohd.rafi\\Tere Mere Sapne Ab Ek Rang Hain _ Mohammed Rafi _ Guide _ Dev Anand_ Waheeda Rehman _ Nagma-E-Rafi(MP3_160K).mp3",
+    "name": "Tere Mere Sapne Ab Ek Rang Hain"
+  },
+  {
+    "url": "songs\\Mohd.rafi\\मैं ज़िन्दगी का साथ Main Zindagi Ka Sath _ HD Song- Mohammed Rafi _ Dev Anand _ Hum Dono 1962(MP3_160K).mp3",
+    "name": "Main Zindagi Ka Saath"
+  },
+  {
+    "url": "songs\\Mohd.rafi\\𝑲𝒚𝒂 𝑺𝒆 𝑲𝒚𝒂 𝑯𝒐 𝑮𝒂𝒚𝒂 _ Mohammed Rafi _ Guide _ Dev Anand_ Wahida Rehman _ Nagma-E-Rafi(MP3_160K).mp3",
+    "name": "Kya Se Kya Ho Gaya"
+  },
+  {
+    "url": "songs\\Mohd.rafi\\Aane Se Uske Aaye Bahar - Jeene Ki Raah - Mohammed Rafi Hit Songs - Laxmikant Pyarelal Songs(MP3_160K).mp3",
+    "name":""
+  },
+  {
+  "url": "songs\\Mohd.rafi\\Dil Deke Dekho Title Song.mp3",
+  "name": "Dil Deke Dekho Title Song"
+},
+{
+  "url": "songs\\Mohd.rafi\\Likhe Jo Khat Tujhe.mp3",
+  "name": "Likhe Jo Khat Tujhe"
+},
+{
+  "url": "songs\\Mohd.rafi\\Aane Se Uske Aaye Bahar.mp3",
+  "name": "Aane Se Uske Aaye Bahar"
+}
+
+]
 }
