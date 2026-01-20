@@ -14,7 +14,7 @@ function formatTime(seconds) {
 
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`./${folder}/info.json`)
+    let a = await fetch(`/${folder}/info.json`)
     let response = await a.text()
     let _songs = JSON.parse(response).songs;
 
@@ -51,13 +51,12 @@ async function getsongs(folder) {
                 console.log(element.innerHTML)
                 console.log(`Name: ${songs[index].name}, URL: ${songs[index].url}`);
                 playmusic(songs[index].url, songs[index].name);
-                index++;
             })
         })
 }
 
 const playmusic = (track, song_name = "", pause = false) => {
-    console.log(`Current Folder = ./${currfolder}/${track}`)
+    console.log(`Current Folder = /${currfolder}/${track}`)
     currentsong.src = track
     if (!pause) {
         currentsong.play()
@@ -68,7 +67,7 @@ const playmusic = (track, song_name = "", pause = false) => {
 }
 
 async function displayalbubs() {
-    let a = await fetch(`./songs/PlaylistInfo.json`)
+    let a = await fetch(`/songs/PlaylistInfo.json`)
     let response = await a.text()
 
     let playlists = JSON.parse(response).Playlists;
@@ -144,7 +143,7 @@ currentsong.onended = () => {
 
     let index = getCurrentSongIndex();
     if (index < songs.length - 1) {
-        playmusic(songs[index + 1].url, songs[index].name);
+        playmusic(songs[index + 1].url, songs[index + 1].name);
     }
 }
 
@@ -183,14 +182,14 @@ function getCurrentSongIndex() {
 previous.addEventListener("click", () => {
     let index = getCurrentSongIndex();
     if (index > 0) {
-        playmusic(songs[index - 1].url, songs[index].name);
+        playmusic(songs[index - 1].url, songs[index - 1].name);
     }
 });
 
 next.addEventListener("click", () => {
     let index = getCurrentSongIndex();
     if (index < songs.length - 1) {
-        playmusic(songs[index + 1].url, songs[index].name);
+        playmusic(songs[index + 1].url, songs[index + 1].name);
     }
 });
 
@@ -198,7 +197,7 @@ function updateEventListener() {
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async item => {
             console.log(item.target, item.currentTarget.dataset)
-            await getsongs(`songs/${item.currentTarget.dataset.folder}`)
+            await getsongs(`/songs/${item.currentTarget.dataset.folder}`)
 
             //Show Drawer
             document.querySelector(".left").style.left = "0"
