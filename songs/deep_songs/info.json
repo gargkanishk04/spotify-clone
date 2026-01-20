@@ -1,47 +1,46 @@
 {
-    "title":"Deep songs",
-    "description":"",
-    "songs":[
-       {
-  "url": "songs\\deep_songs\\Lag Ja Gale Se Phir.mp3",
-  "name": "Lag Ja Gale Se Phir"
-},
-{
-  "url": "songs\\deep_songs\\Mera Jeevan Kora Kagaz.mp3",
-  "name": "Mera Jeevan Kora Kagaz"
-},
-{
-  "url": "songs\\deep_songs\\Ye Raat Ye Chandni Phir Kahan.mp3",
-  "name": "Ye Raat Ye Chandni Phir Kahan"
-},
-{
-  "url": "songs\\deep_songs\\Zindagi Ke Safar Mein Guzar Jaate.mp3",
-  "name": "Zindagi Ke Safar Mein Guzar Jaate"
-},
-{
-  "url": "songs\\deep_songs\\Chhupa Lo Yun Dil Men.mp3",
-  "name": "Chhupa Lo Yun Dil Men"
-},
-{
-  "url": "songs\\deep_songs\\Dukhi Man Mere.mp3",
-  "name": "Dukhi Man Mere"
-},
-{
-  "url": "songs\\deep_songs\\Ehsan Tera Hoga Mujh Par.mp3",
-  "name": "Ehsan Tera Hoga Mujh Par"
-},
-{
-  "url": "songs\\deep_songs\\Jane Woh Kaise Log The.mp3",
-  "name": "Jane Woh Kaise Log The"
-},
-{
-  "url": "songs\\deep_songs\\Kahi Door Jab.mp3",
-  "name": "Kahi Door Jab"
-},
-{
-  "url": "songs\\deep_songs\\Musafir Hoon Yaaron.mp3",
-  "name": "Musafir Hoon Yaaron"
-}
-
+    "title": "Deep songs",
+    "description": "",
+    "songs": [
+        {
+            "url": ".\\songs\\deep_songs\\Lag Ja Gale Se Phir.mp3",
+            "name": "Lag Ja Gale Se Phir"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Mera Jeevan Kora Kagaz.mp3",
+            "name": "Mera Jeevan Kora Kagaz"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Ye Raat Ye Chandni Phir Kahan.mp3",
+            "name": "Ye Raat Ye Chandni Phir Kahan"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Zindagi Ke Safar Mein Guzar Jaate.mp3",
+            "name": "Zindagi Ke Safar Mein Guzar Jaate"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Chhupa Lo Yun Dil Men.mp3",
+            "name": "Chhupa Lo Yun Dil Men"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Dukhi Man Mere.mp3",
+            "name": "Dukhi Man Mere"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Ehsan Tera Hoga Mujh Par.mp3",
+            "name": "Ehsan Tera Hoga Mujh Par"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Jane Woh Kaise Log The.mp3",
+            "name": "Jane Woh Kaise Log The"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Kahi Door Jab.mp3",
+            "name": "Kahi Door Jab"
+        },
+        {
+            "url": ".\\songs\\deep_songs\\Musafir Hoon Yaaron.mp3",
+            "name": "Musafir Hoon Yaaron"
+        }
     ]
 }
