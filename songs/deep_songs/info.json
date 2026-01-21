@@ -2,45 +2,46 @@
     "title": "Deep songs",
     "description": "",
     "songs": [
-        {
-            "url": ".\\songs\\deep_songs\\Lag Ja Gale Se Phir.mp3",
-            "name": "Lag Ja Gale Se Phir"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Mera Jeevan Kora Kagaz.mp3",
-            "name": "Mera Jeevan Kora Kagaz"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Ye Raat Ye Chandni Phir Kahan.mp3",
-            "name": "Ye Raat Ye Chandni Phir Kahan"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Zindagi Ke Safar Mein Guzar Jaate.mp3",
-            "name": "Zindagi Ke Safar Mein Guzar Jaate"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Chhupa Lo Yun Dil Men.mp3",
-            "name": "Chhupa Lo Yun Dil Men"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Dukhi Man Mere.mp3",
-            "name": "Dukhi Man Mere"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Ehsan Tera Hoga Mujh Par.mp3",
-            "name": "Ehsan Tera Hoga Mujh Par"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Jane Woh Kaise Log The.mp3",
-            "name": "Jane Woh Kaise Log The"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Kahi Door Jab.mp3",
-            "name": "Kahi Door Jab"
-        },
-        {
-            "url": ".\\songs\\deep_songs\\Musafir Hoon Yaaron.mp3",
-            "name": "Musafir Hoon Yaaron"
-        }
-    ]
+  {
+    "name": "Musafir Hoon Yaaron",
+    "url": "songs\\deep_songs\\Kishore Kumar _ Musafir Hoon Yaaron _ Jeetendra _ Old Hindi Song(MP3_160K).mp3"
+  },
+  {
+    "name": "Lag Ja Gale Se Phir",
+    "url":"songs\\deep_songs\\Lag Ja Gale Se Phir _  Lata Mangeshkar Hits _ Woh Kaun Thi_ (1964)(MP3_160K).mp3"
+  },
+  {
+    "name": "Mera Jeevan Kora Kagaz",
+    "url": "songs\\deep_songs\\Mera Jeevan Kora Kagaz _ Kora Kagaz _ Hindi Film Song _ Kishore Kumar(MP3_160K).mp3"
+  },
+  {
+    "name": "Ye Raat Ye Chandni Phir Kahan",
+    "url": "songs\\deep_songs\\Ye Raat Ye Chandni Phir Kahan (hemant) - Jaal Songs - Dev Anand - Geeta Bali - SD Burman Hits(MP3_160K).mp3"
+  },
+  {
+    "name": "Zindagi Ke Safar Mein Guzar Jaate",
+    "url": "songs\\deep_songs\\Zindagi Ke Safar Mein Guzar Jaate _ Kishore Kumar _ Aap Ki Kasam 1974 Songs(MP3_160K).mp3"
+  },
+  {
+    "name": "Chhupa Lo Yun Dil Men",
+    "url": "songs\\deep_songs\\Chhupa Lo Yun Dil Men _ Hemant Kumar _ Lata Mangeshkar _ Roshan _ Old Hindi Song(MP3_160K).mp3"
+  },
+  {
+    "name": "Dukhi Man Mere",
+    "url": "songs\\deep_songs\\DUKHI MAN MERE(MP3_160K).mp3"
+  },
+  {
+    "name": "Ehsan Tera Hoga Mujh Par",
+    "url": "songs\\deep_songs\\Ehsan Tera Hoga Mujh Par with Lyrics _ एहसान तेरा होगा मुझ पर के बोल _ Mohammed Rafi(MP3_160K).mp3"
+  },
+  {
+    "name": "Jane Woh Kaise Log The",
+    "url": "songs\\deep_songs\\Jane Woh Kaise Log The _ Pyaasa _ Hemant Kumar _ S.D. Burman(MP3_160K).mp3"
+  },
+  {
+    "name": "Kahi Door Jab",
+    "url": "songs\\deep_songs\\Kahi Door Jab with Lyrics _ कहीं दूर जब गाने के बोल _ Anand _ Rajesh Khanna_ Sumita Sanyal(MP3_160K).mp3"
+  }
+]
+
 }

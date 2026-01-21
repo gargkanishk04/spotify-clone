@@ -14,7 +14,7 @@ function formatTime(seconds) {
 
 async function getsongs(folder) {
     currfolder = folder;
-    let a = await fetch(`/${folder}/info.json`)
+    let a = await fetch(`./${folder}/info.json`)
     let response = await a.text()
     let _songs = JSON.parse(response).songs;
 
@@ -23,11 +23,7 @@ async function getsongs(folder) {
     songs = []
 
     _songs.forEach((e) => {
-        songs.push({
-    name: e.name,
-    url: encodeURI(e.url)
-});
-
+        songs.push({ "name": e.name, "url": decodeURIComponent(e.url) });
 
         console.log(`Song: ${e.url}`);
     });
@@ -60,29 +56,18 @@ async function getsongs(folder) {
 }
 
 const playmusic = (track, song_name = "", pause = false) => {
-    const safeTrack = encodeURI(track);
-    currentsong.src = `/${safeTrack}`;
-
-    if (!pause) {
-        currentsong.play().catch(err => console.log(err));
-    }
-
-    updatePlayIcon();
-    document.querySelector(".songinfo").innerHTML = song_name;
-    document.querySelector(".songtime").innerHTML = "00:00";
-};
-
-
+    console.log(`Current Folder = ./${currfolder}/${track}`)
+    currentsong.src = track
     if (!pause) {
         currentsong.play()
     }
     updatePlayIcon();
     document.querySelector(".songinfo").innerHTML = song_name
     document.querySelector(".songtime").innerHTML = "00:00"
-
+}
 
 async function displayalbubs() {
-    let a = await fetch(`/songs/PlaylistInfo.json`)
+    let a = await fetch(`./songs/PlaylistInfo.json`)
     let response = await a.text()
 
     let playlists = JSON.parse(response).Playlists;
@@ -96,7 +81,7 @@ async function displayalbubs() {
     Array.from(playlists).forEach(async e => {
         try {
             console.log(e)
-            let a = await fetch(`/songs/${e}/info.json`)
+            let a = await fetch(`./songs/${e}/info.json`)
             let response = await a.text();
             let title = JSON.parse(response).title;
             let description = JSON.parse(response).description;
@@ -156,13 +141,10 @@ play.addEventListener("click", () => {
 currentsong.onended = () => {
     console.log("THis song has eneded");
 
-    function getCurrentSongIndex() {
-    let currentFile = decodeURIComponent(currentsong.src.split("/").pop());
-    return songs.findIndex(song =>
-        decodeURIComponent(song.url).includes(currentFile)
-    );
-}
-
+    let index = getCurrentSongIndex();
+    if (index < songs.length - 1) {
+        playmusic(songs[index + 1].url, songs[index + 1].name);
+    }
 }
 
 currentsong.addEventListener("timeupdate", () => {
@@ -215,7 +197,7 @@ function updateEventListener() {
     Array.from(document.getElementsByClassName("card")).forEach(e => {
         e.addEventListener("click", async item => {
             console.log(item.target, item.currentTarget.dataset)
-            await getsongs(`songs/${item.currentTarget.dataset.folder}`)
+            await getsongs(`./songs/${item.currentTarget.dataset.folder}`)
 
             //Show Drawer
             document.querySelector(".left").style.left = "0"
